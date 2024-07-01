@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+  }
+  body {
+   background-color: black;
+    display: flex;
+    
+  }
+  
+  .imga {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+  }
+  .imga img {
+    width: 100%;
+    border-radius: 100px;
+    border: 3px solid white;
+    transform: transform 0.5s ease;
+  }
+  .imga img:hover {
+    transform: scale(1.4);
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .profile h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #123;
+    width: 50px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+  
+    transition: 1s;
+  }
+  .menu:hover {
+    width: 200px;
+    overflow: visible;
+    /* transform: translate(1); */
+  }
+  ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+  }
+  ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(20, 70, 119);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  ul li a:hover,.box:hover ,td:hover{
+    opacity: 0.5;
+    background-color: gray;
+    transform: scale(1.1);
+  }
+  .log {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .log a {
+    background-color: red;
+  }
+  ul li a i {
+    font-size: larger;
+  }
+  .log a:hover {
+    background-color: red;
+    opacity: 1;
+  }
+  .content{
+      background-color: rgb(27, 22, 22);
+    width: 100%;
+    
+  }
+  
+  .title-info{
+      background-color: #123;
+      display: flex;
+      height: 50px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      margin: 10px ;
+      border-radius: 10px;
+    
+  }
+  .data-info{
+      display: flex;
+      justify-content: space-between;
+     flex-wrap: wrap;
+     margin: 20px 20px;
+     height: 150px;
+  }
+  .box{
+      display: flex;
+      background-color: #123;
+      width: 23%;
+      border-radius: 20px;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      opacity: 1;
+  }
+  .box :hover{
+      background-color: gray;
+      opacity: 0.6;
+  }
+  .box i{
+      font-size: 80px;
+  }
+  .data p ,span{
+      font-size: 20px;
+  }
+  .data span{
+      color: yellow;
+  }
+
+table{
+    width: 100%;
+    margin: 30px 30px;
+    text-align: center;
+    border-spacing: 20px;
+}
+table th{
+    background-color: rgb(6, 95, 184);
+    border-radius: 20px;
+   
+}
+
+td{
+    background-color: rgb(4, 60, 116);
+    border-radius: 10px;
+}
+.price,.cont{
+    border-radius: 10px;
+}
+.price{
+    background-color: green;
+
+    
+}
+.cont{
+    background-color: yellow;
+    color: black;
+}
